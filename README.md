@@ -75,3 +75,26 @@ let obj=[
 ]
 console.log(getCount(obj))
 ```
+
+### Try, Catch and Finally
+
+``` javascript
+
+function reverseString(s) {
+    try{
+        console.log(s.split('').reverse().join(''))
+    }catch(err){
+        console.log(err.message)
+    }finally{
+        console.log(s)
+    }
+}
+
+reverseString('1234')
+reverseString(1234)
+```
+
+### Create a Polygon class that has the following properties:
+
+- A constructor that takes an array of integer values describing the lengths of the polygon's sides.
+- A perimeter() method that returns the polygon's perimeter.
