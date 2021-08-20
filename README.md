@@ -19,9 +19,8 @@ function secondLargest(nums){
            secondlargest=nums[i];
        }
    }
-   console.log(largest)
-   console.log(secondlargest)
+   return secondlargest;
 }
 
-secondLargest([2,3,4,6,6,5])
+console.log(secondLargest([2,3,4,6,6,5]))
 ```
