@@ -131,3 +131,16 @@ class Polygon{
 let triangle=new Polygon([3,4,1,9,3])
 console.log(triangle.perimeter())
 ```
+
+### Write the function. It has one parameter: an array,nums . It must iterate through the array performing one of the following actions on each element:
+
+- If the element is even, multiply the element by 2.
+- If the element is odd, multiply the element by 3.
+
+``` javascript
+function modifyArray(nums) {
+    return nums.map(item=> item%2===0? item*2: item*3)
+}
+
+console.log(modifyArray([1,3,2,4,8,9,0,5]))
+```
