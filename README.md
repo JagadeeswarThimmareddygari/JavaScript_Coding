@@ -98,3 +98,36 @@ reverseString(1234)
 
 - A constructor that takes an array of integer values describing the lengths of the polygon's sides.
 - A perimeter() method that returns the polygon's perimeter.
+
+``` javascript
+class Polygon{
+    constructor(arr){
+        this.arr=arr;
+    }
+    perimeter(){
+        let sum=0;
+        for(let i=0;i<this.arr.length;i++){
+            sum+=this.arr[i];
+        }
+        return sum;
+    }
+}
+let triangle=new Polygon([1,2,3,4])
+console.log(triangle.perimeter())
+```
+
+``` javascript
+class Polygon{
+    constructor(arr){
+        this.arr=arr;
+    }
+    perimeter(){
+        return this.arr.reduce((a,b)=>{
+            return a+b;
+        },0)
+    }
+}
+
+let triangle=new Polygon([3,4,1,9,3])
+console.log(triangle.perimeter())
+```
