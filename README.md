@@ -1,4 +1,4 @@
-# JavaScritp_Coding
+# JavaScript_Coding
 ---
 ## Day1
 ---
